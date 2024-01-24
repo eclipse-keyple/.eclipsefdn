@@ -1,11 +1,11 @@
-site_name: Otterdog configuration @ {{ org }}
-site_description: Otterdog configuration @ {{ org }}
+site_name: Otterdog configuration @ eclipse-keyple
+site_description: Otterdog configuration @ eclipse-keyple
 strict: false
 
-site_url: https://{{ org }}.github.io/.eclipsefdn/
+site_url: https://eclipse-keyple.github.io/.eclipsefdn/
 
-repo_name: {{ org }}/.eclipsefdn
-repo_url: https://github.com/{{ org }}/.eclipsefdn/
+repo_name: eclipse-keyple/.eclipsefdn
+repo_url: https://github.com/eclipse-keyple/.eclipsefdn/
 
 docs_dir: ./docs
 site_dir: ./_site
