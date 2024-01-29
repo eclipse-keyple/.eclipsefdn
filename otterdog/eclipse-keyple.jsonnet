@@ -198,6 +198,31 @@ orgs.newOrg('eclipse-keyple') {
         orgs.newEnvironment('github-pages'),
       ],
     },
+    orgs.newRepo('keyple-cpp') {
+      archived: true,
+      default_branch: "master",
+      dependabot_alerts_enabled: false,
+      description: "'DEPRECATED' Eclipse Keyple™ Project: all components of the C++ implementation until version 0.9.0",
+      homepage: "https://keyple.org/",
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('master') {
+          required_approving_review_count: 1,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('develop') {
+          required_approving_review_count: 1,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+      ],
+    },
     orgs.newRepo('keyple-cpp-example') {
       allow_merge_commit: true,
       allow_update_branch: false,
@@ -376,6 +401,41 @@ orgs.newOrg('eclipse-keyple') {
         default_workflow_permissions: "write",
       },
     },
+    orgs.newRepo('keyple-java') {
+      archived: true,
+      default_branch: "master",
+      dependabot_alerts_enabled: false,
+      dependabot_security_updates_enabled: true,
+      description: "'DEPRECATED' Eclipse Keyple™ Project: deprecated repository embedding all components of the Java implementation until version 1.0.0",
+      homepage: "https://keyple.org/",
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      topics+: [
+        "deprecated",
+        "end-users",
+        "java",
+        "keyple"
+      ],
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('develop') {
+          required_approving_review_count: 1,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+        orgs.newBranchProtectionRule('master') {
+          required_approving_review_count: 1,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+      ],
+      environments: [
+        orgs.newEnvironment('github-pages'),
+      ],
+    },
     orgs.newRepo('keyple-java-example') {
       allow_merge_commit: true,
       allow_update_branch: false,
@@ -389,6 +449,22 @@ orgs.newOrg('eclipse-keyple') {
         "keyple",
         "support"
       ],
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
+    orgs.newRepo('keyple-ops') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      default_branch: "master",
+      delete_branch_on_merge: false,
+      dependabot_security_updates_enabled: true,
+      description: "Eclipse Keyple™ Project: Ops settings",
+      has_wiki: false,
+      homepage: "https://keyple.org/",
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
