@@ -13,7 +13,7 @@ orgs.newOrg('eclipse-keyple') {
     },
   },
   _repositories+:: [
-    orgs.newRepo('keyple') {
+    orgs.newRepo('.github') {
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
