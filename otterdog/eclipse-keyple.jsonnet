@@ -79,6 +79,30 @@ orgs.newOrg('eclipse-keyple') {
         },
       ],
     },
+    orgs.newRepo('keyple-card-calypso-crypto-pki-java-lib') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "Eclipse Keyple™ Project: Calypso PKI extension lib for end users",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "gh-pages",
+      gh_pages_source_path: "/",
+      homepage: "https://keyple.org/",
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "gh-pages"
+          ],
+          deployment_branch_policy: "selected",
+        },
+      ],
+    },
     orgs.newRepo('keyple-card-calypso-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
