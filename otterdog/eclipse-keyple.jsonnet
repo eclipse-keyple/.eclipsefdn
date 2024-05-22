@@ -17,8 +17,6 @@ orgs.newOrg('eclipse-keyple') {
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: raw repository to handle issue: global for the project, or specific for a new component  to create",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -45,8 +43,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -64,8 +60,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -88,8 +82,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -113,8 +105,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -139,8 +129,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -159,8 +147,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_path: "/",
       has_wiki: false,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "java",
         "keyple"
@@ -182,8 +168,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -202,8 +186,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -225,8 +207,6 @@ orgs.newOrg('eclipse-keyple') {
       dependabot_alerts_enabled: false,
       description: "'DEPRECATED' Eclipse Keyple™ Project: all components of the C++ implementation until version 0.9.0",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -251,8 +231,6 @@ orgs.newOrg('eclipse-keyple') {
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: use case examples of the Keyple C++ components for end users",
       homepage: "https://keyple.org",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -264,8 +242,6 @@ orgs.newOrg('eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "keyple-cpp-meta",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -281,8 +257,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -307,8 +281,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -333,8 +305,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -359,8 +329,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -386,8 +354,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -409,8 +375,6 @@ orgs.newOrg('eclipse-keyple') {
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: java integration tests / internal to the project",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "internal",
         "java",
@@ -429,8 +393,6 @@ orgs.newOrg('eclipse-keyple') {
       dependabot_security_updates_enabled: true,
       description: "'DEPRECATED' Eclipse Keyple™ Project: deprecated repository embedding all components of the Java implementation until version 1.0.0",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "deprecated",
         "end-users",
@@ -463,8 +425,6 @@ orgs.newOrg('eclipse-keyple') {
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: use case examples of the Keyple Java components for end users",
       homepage: "https://keyple.org",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "java",
         "keyple",
@@ -484,8 +444,6 @@ orgs.newOrg('eclipse-keyple') {
       description: "Eclipse Keyple™ Project: Ops settings",
       has_wiki: false,
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -500,8 +458,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "android",
         "keyple",
@@ -525,8 +481,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -551,8 +505,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -575,8 +527,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -595,8 +545,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -621,8 +569,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -641,8 +587,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -667,8 +611,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -687,8 +629,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -713,8 +653,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -735,8 +673,6 @@ orgs.newOrg('eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -761,8 +697,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -780,8 +714,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "core",
         "java",
@@ -804,8 +736,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -823,8 +753,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -852,8 +780,6 @@ orgs.newOrg('eclipse-keyple') {
       gh_pages_source_path: "/",
       has_wiki: false,
       homepage: "https://keyple.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
