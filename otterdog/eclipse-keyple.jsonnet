@@ -54,6 +54,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-card-calypso-crypto-legacysam-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: Calypso legacy SAM extension lib for end users",
       gh_pages_build_type: "legacy",
@@ -98,6 +102,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-card-calypso-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: Calypso card extension lib for end users",
@@ -140,6 +148,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-card-generic-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: add-on library to operate generic smartcard solution (based on the Calypso Terminal Card API) / for end users",
       gh_pages_build_type: "legacy",
@@ -179,6 +191,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-common-java-api') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: common API for all modules",
@@ -204,7 +220,6 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-cpp') {
       archived: true,
       default_branch: "master",
-      dependabot_alerts_enabled: false,
       description: "'DEPRECATED' Eclipse Keyple™ Project: all components of the C++ implementation until version 0.9.0",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
@@ -250,6 +265,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-distributed-local-java-api') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: API for distributed local service developers",
@@ -275,6 +294,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-distributed-local-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: distributed local service API for end users",
       gh_pages_build_type: "legacy",
@@ -299,6 +322,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-distributed-network-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: distributed network API for end users",
       gh_pages_build_type: "legacy",
@@ -323,6 +350,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-distributed-remote-java-api') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: API for distributed remote plugin developers",
       gh_pages_build_type: "legacy",
@@ -347,6 +378,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-distributed-remote-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: distributed remote plugin API for end users",
@@ -389,7 +424,6 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-java') {
       archived: true,
       default_branch: "master",
-      dependabot_alerts_enabled: false,
       dependabot_security_updates_enabled: true,
       description: "'DEPRECATED' Eclipse Keyple™ Project: deprecated repository embedding all components of the Java implementation until version 1.0.0",
       homepage: "https://keyple.org/",
@@ -452,6 +486,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-plugin-android-nfc-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: Android NFC plugin library for end users",
       gh_pages_build_type: "legacy",
@@ -474,6 +512,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-plugin-android-omapi-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: Android OMAPI plugin API for end users",
@@ -499,6 +541,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-plugin-cardresource-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: Card Resource plugin lib for end users",
       gh_pages_build_type: "legacy",
@@ -538,6 +584,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-plugin-java-api') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project - Java implementation: API for plugin developers",
@@ -580,6 +630,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-plugin-pcsc-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: PC/SC plugin lib for end users",
@@ -622,6 +676,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-plugin-stub-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: stub plugin API for end users",
@@ -664,6 +722,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-service-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project - Java implementation: main service API for end users",
@@ -708,6 +770,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-service-resource-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: add-on library to define a profile-based card resource allocation mechanism",
       gh_pages_build_type: "legacy",
@@ -747,6 +813,10 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-util-java-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: utility library for all users",
       gh_pages_build_type: "legacy",
@@ -771,6 +841,12 @@ orgs.newOrg('eclipse-keyple') {
     orgs.newRepo('keyple-website') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
+      code_scanning_default_setup_enabled: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
