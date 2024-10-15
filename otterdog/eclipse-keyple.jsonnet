@@ -404,6 +404,7 @@ orgs.newOrg('eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-less-distributed-client-kmp-lib') {
+      local thisRepo = self,
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
@@ -422,7 +423,7 @@ orgs.newOrg('eclipse-keyple') {
         default_workflow_permissions: "write",
       },
       branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
+        orgs.newBranchProtectionRule(thisRepo.default_branch) {
           required_approving_review_count: 1,
           requires_status_checks: false,
           requires_strict_status_checks: true,
@@ -433,6 +434,7 @@ orgs.newOrg('eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-less-reader-nfcmobile-kmp-lib') {
+      local thisRepo = self,
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
@@ -451,7 +453,7 @@ orgs.newOrg('eclipse-keyple') {
         default_workflow_permissions: "write",
       },
       branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
+        orgs.newBranchProtectionRule(thisRepo.default_branch) {
           required_approving_review_count: 1,
           requires_status_checks: false,
           requires_strict_status_checks: true,
