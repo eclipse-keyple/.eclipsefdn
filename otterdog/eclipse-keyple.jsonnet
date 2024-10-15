@@ -403,6 +403,66 @@ orgs.newOrg('eclipse-keyple') {
         orgs.newEnvironment('github-pages'),
       ],
     },
+    orgs.newRepo('keyple-less-distributed-client-kmp-lib') {
+      local thisRepo = self,
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
+      delete_branch_on_merge: false,
+      dependabot_security_updates_enabled: true,
+      description: "Eclipse Keyple™ Project: Kotlin Multiplatform distributed remote client lib for Keyple-less terminals",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "gh-pages",
+      gh_pages_source_path: "/",
+      homepage: "https://keyple.org/",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule(thisRepo.default_branch) {
+          required_approving_review_count: 1,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+      ],
+      environments: [
+        orgs.newEnvironment('github-pages'),
+      ],
+    },
+    orgs.newRepo('keyple-less-reader-nfcmobile-kmp-lib') {
+      local thisRepo = self,
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
+      delete_branch_on_merge: false,
+      dependabot_security_updates_enabled: true,
+      description: "Eclipse Keyple™ Project: Kotlin Multiplatform NFC abstraction layer for Android and iOS",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "gh-pages",
+      gh_pages_source_path: "/",
+      homepage: "https://keyple.org/",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule(thisRepo.default_branch) {
+          required_approving_review_count: 1,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
+      ],
+      environments: [
+        orgs.newEnvironment('github-pages'),
+      ],
+    },
     orgs.newRepo('keyple-integration-java-test') {
       allow_merge_commit: true,
       allow_update_branch: false,
