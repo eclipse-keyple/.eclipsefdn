@@ -7,7 +7,12 @@ orgs.newOrg('eclipse-keyple') {
       actions_can_approve_pull_request_reviews: false,
       default_workflow_permissions: "write",
     },
-  },
+  },  
+  secrets+: [
+    orgs.newOrgSecret('ORG_GITHUB_BOT_TOKEN') {
+      value: "pass:bots/iot.keyple/github.com/api-token",
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('.github') {
       allow_merge_commit: true,
