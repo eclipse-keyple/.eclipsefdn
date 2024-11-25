@@ -931,7 +931,7 @@ orgs.newOrg('eclipse-keyple') {
       dependabot_security_updates_enabled: false,
       description: "Eclipse Keyple project repository centralizing API documentation (Javadoc, Doxygen) from all Keyple libraries",
       gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "main",
+      gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       has_projects: false,
       has_wiki: false,
