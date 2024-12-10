@@ -971,6 +971,9 @@ orgs.newOrg('eclipse-keyple') {
       local thisRepo = self,
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages: [
+        "python",
+      ],
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
