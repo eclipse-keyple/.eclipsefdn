@@ -408,13 +408,14 @@ orgs.newOrg('eclipse-keyple') {
         orgs.newEnvironment('github-pages'),
       ],
     },
-    orgs.newRepo('keyple-less-distributed-client-kmp-lib') {
+    orgs.newRepo('keypleless-distributed-client-kmp-lib') {
+      aliases: ['keyple-less-distributed-client-kmp-lib'],
       local thisRepo = self,
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      description: "Eclipse Keyple™ Project: Kotlin Multiplatform distributed remote client lib for Keyple-less terminals",
+      description: "Eclipse Keyple™ Project: Kotlin Multiplatform distributed remote client lib for Keypleless terminals",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
@@ -434,7 +435,8 @@ orgs.newOrg('eclipse-keyple') {
         orgs.newEnvironment('github-pages'),
       ],
     },
-    orgs.newRepo('keyple-less-reader-nfcmobile-kmp-lib') {
+    orgs.newRepo('keypleless-reader-nfcmobile-kmp-lib') {
+      aliases: ['keyple-less-reader-nfcmobile-kmp-lib'],
       local thisRepo = self,
       allow_merge_commit: true,
       allow_update_branch: false,
