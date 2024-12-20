@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-keyple') {
+orgs.newOrg('iot.keyple', 'eclipse-keyple') {
   settings+: {
     web_commit_signoff_required: false,
     workflows+: {
