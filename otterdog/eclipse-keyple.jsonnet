@@ -44,16 +44,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "keyple-card-calypso-cpp-lib",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-card-calypso-crypto-legacysam-java-lib') {
       allow_merge_commit: true,
@@ -64,9 +58,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: Calypso legacy SAM extension lib for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -86,9 +77,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: Calypso PKI extension lib for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -113,9 +101,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: Calypso card extension lib for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -128,9 +113,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_strict_status_checks: true,
         },
       ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-card-generic-cpp-lib') {
       allow_merge_commit: true,
@@ -138,16 +120,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "keyple-card-generic-cpp-lib",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-card-generic-java-lib') {
       allow_merge_commit: true,
@@ -158,9 +134,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: add-on library to operate generic smartcard solution (based on the Calypso Terminal Card API) / for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       has_wiki: false,
       homepage: "",
       topics+: [
@@ -171,9 +144,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-common-cpp-api') {
       allow_merge_commit: true,
@@ -181,16 +151,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "keyple-common-cpp-api",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-common-java-api') {
       allow_merge_commit: true,
@@ -202,9 +166,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: common API for all modules",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -216,9 +177,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
-      ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
       ],
     },
     orgs.newRepo('keyple-cpp') {
@@ -276,9 +234,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: API for distributed local service developers",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -290,9 +245,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
-      ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
       ],
     },
     orgs.newRepo('keyple-distributed-local-java-lib') {
@@ -304,9 +256,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: distributed local service API for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -318,9 +267,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
-      ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
       ],
     },
     orgs.newRepo('keyple-distributed-network-java-lib') {
@@ -332,9 +278,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: distributed network API for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -346,9 +289,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
-      ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
       ],
     },
     orgs.newRepo('keyple-distributed-remote-java-api') {
@@ -360,9 +300,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: API for distributed remote plugin developers",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -374,9 +311,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
-      ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
       ],
     },
     orgs.newRepo('keyple-distributed-remote-java-lib') {
@@ -389,9 +323,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: distributed remote plugin API for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -404,9 +335,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_strict_status_checks: true,
         },
       ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keypleless-distributed-client-kmp-lib') {
       aliases: ['keyple-less-distributed-client-kmp-lib'],
@@ -416,9 +344,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: Kotlin Multiplatform distributed remote client lib for Keypleless terminals",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -430,9 +355,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
-      ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
       ],
     },
     orgs.newRepo('keypleless-reader-nfcmobile-kmp-lib') {
@@ -443,9 +365,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: Kotlin Multiplatform NFC abstraction layer for Android and iOS",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -457,9 +376,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
-      ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
       ],
     },
     orgs.newRepo('keyple-integration-java-test') {
@@ -507,9 +423,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_strict_status_checks: true,
         },
       ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-java-example') {
       allow_merge_commit: true,
@@ -550,9 +463,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: Android NFC plugin library for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "",
       topics+: [
         "android",
@@ -563,9 +473,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-plugin-android-omapi-java-lib') {
       allow_merge_commit: true,
@@ -577,9 +484,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: Android OMAPI plugin API for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -592,9 +496,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_strict_status_checks: true,
         },
       ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-plugin-cardresource-java-lib') {
       allow_merge_commit: true,
@@ -605,9 +506,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: Card Resource plugin lib for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -627,17 +525,11 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project - C++ implementation: API for plugin developers",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-plugin-java-api') {
       allow_merge_commit: true,
@@ -649,9 +541,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project - Java implementation: API for plugin developers",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -664,26 +553,16 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_strict_status_checks: true,
         },
       ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-plugin-pcsc-cpp-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
-      description: "keyple-plugin-pcsc-cpp-lib",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
-      web_commit_signoff_required: false,
+      description: "keyple-plugin-pcsc-cpp-lib",web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-plugin-pcsc-java-lib') {
       allow_merge_commit: true,
@@ -695,9 +574,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: PC/SC plugin lib for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -710,9 +586,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_strict_status_checks: true,
         },
       ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-plugin-stub-cpp-lib') {
       allow_merge_commit: true,
@@ -720,16 +593,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "keyple-plugin-stub-cpp-lib",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-plugin-stub-java-lib') {
       allow_merge_commit: true,
@@ -741,9 +608,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: stub plugin API for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -756,26 +620,17 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_strict_status_checks: true,
         },
       ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-service-cpp-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project - C++ implementation: main service API for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-service-java-lib') {
       allow_merge_commit: true,
@@ -787,9 +642,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project - Java implementation: main service API for end users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
@@ -804,9 +656,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_strict_status_checks: true,
         },
       ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-service-resource-cpp-lib') {
       allow_merge_commit: true,
@@ -814,16 +663,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "keyple-service-resource-cpp-lib",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-service-resource-java-lib') {
       allow_merge_commit: true,
@@ -834,9 +677,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: add-on library to define a profile-based card resource allocation mechanism",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "",
       topics+: [
         "core",
@@ -847,9 +687,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-util-cpp-lib') {
       allow_merge_commit: true,
@@ -857,16 +694,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "keyple-util-cpp-lib",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages'),
-      ],
     },
     orgs.newRepo('keyple-util-java-lib') {
       allow_merge_commit: true,
@@ -877,9 +708,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project: utility library for all users",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -891,9 +719,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
-      ],
-      environments: [
-        orgs.newEnvironment('github-pages'),
       ],
     },
     orgs.newRepo('keyple-website') {
