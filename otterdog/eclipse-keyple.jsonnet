@@ -63,14 +63,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages') {
-          branch_policies+: [
-            "gh-pages"
-          ],
-          deployment_branch_policy: "selected",
-        },
-      ],
     },
     orgs.newRepo('keyple-card-calypso-crypto-pki-java-lib') {
       allow_merge_commit: true,
@@ -82,14 +74,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages') {
-          branch_policies+: [
-            "gh-pages"
-          ],
-          deployment_branch_policy: "selected",
-        },
-      ],
     },
     orgs.newRepo('keyple-card-calypso-java-lib') {
       allow_merge_commit: true,
@@ -511,14 +495,6 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      environments: [
-        orgs.newEnvironment('github-pages') {
-          branch_policies+: [
-            "gh-pages"
-          ],
-          deployment_branch_policy: "selected",
-        },
-      ],
     },
     orgs.newRepo('keyple-plugin-cpp-api') {
       allow_merge_commit: true,
