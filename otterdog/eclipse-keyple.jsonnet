@@ -12,6 +12,24 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newOrgSecret('ORG_GITHUB_BOT_TOKEN') {
       value: "pass:bots/iot.keyple/github.com/api-token",
     },
+     orgs.newOrgSecret('GPG_KEY_ID') {
+      value: 'pass:bots/iot.keyple/gpg/key_id',
+    },
+    orgs.newOrgSecret('GPG_SUBKEY_ID') {
+      value: 'pass:bots/iot.keyple/gpg/subkey_id',
+    },
+    orgs.newOrgSecret('GPG_PASSPHRASE') {
+      value: "pass:bots/iot.keyple/gpg/passphrase",
+    },
+    orgs.newOrgSecret('GPG_PRIVATE_KEY') {
+      value: "pass:bots/iot.keyple/gpg/secret-subkeys.asc",
+    },
+    orgs.newOrgSecret('OSSRH_PASSWORD') {
+      value: "pass:bots/iot.keyple/oss.sonatype.org/gh-token-password",
+    },
+    orgs.newOrgSecret('OSSRH_USERNAME') {
+      value: "pass:bots/iot.keyple/oss.sonatype.org/gh-token-username",
+    },
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
