@@ -549,6 +549,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-plugin-storagecard-java-api') {
+      aliases: ['keyple-plugin-storage-card-java-api'],
       allow_merge_commit: true,
       allow_update_branch: false,
       // uncomment when some kotlin code is available in the repo
