@@ -338,14 +338,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
         },
       ],
     },
-    orgs.newRepo('keypleless-distributed-client-kmp-lib') {
-      aliases: ['keyple-less-distributed-client-kmp-lib'],
+    orgs.newRepo('keyple-interop-jsonapi-client-kmp-lib') {
+      aliases: ['keyple-less-distributed-client-kmp-lib', 'keypleless-distributed-client-kmp-lib'],
       local thisRepo = self,
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      description: "Eclipse Keyple™ Project: Kotlin Multiplatform distributed remote client lib for Keypleless terminals",
+      description: "Eclipse Keyple™ Project: A multiplatform client library implementing the Keyple Server JSON API and Selection JSON Specification to enable non-Keyple applications to interact with a Keyple server.",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -359,14 +359,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
         },
       ],
     },
-    orgs.newRepo('keypleless-reader-nfcmobile-kmp-lib') {
-      aliases: ['keyple-less-reader-nfcmobile-kmp-lib'],
+    orgs.newRepo('keyple-interop-localreader-nfcmobile-kmp-lib') {
+      aliases: ['keyple-less-reader-nfcmobile-kmp-lib', 'keypleless-reader-nfcmobile-kmp-lib'],
       local thisRepo = self,
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      description: "Eclipse Keyple™ Project: Kotlin Multiplatform NFC abstraction layer for Android and iOS",
+      description: "Eclipse Keyple™ Project: A multiplatform adapter providing a LocalReader SPI implementation to allow non-Keyple applications to control the local NFC reader",
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -548,7 +548,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
         },
       ],
     },
-    orgs.newRepo('keyple-plugin-storage-card-java-api') {
+    orgs.newRepo('keyple-plugin-storagecard-java-api') {
+      aliases: ['keyple-plugin-storage-card-java-api'],
       allow_merge_commit: true,
       allow_update_branch: false,
       // uncomment when some kotlin code is available in the repo
