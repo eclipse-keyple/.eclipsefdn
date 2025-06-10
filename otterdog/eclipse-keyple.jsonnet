@@ -24,11 +24,11 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newOrgSecret('GPG_PRIVATE_KEY') {
       value: "pass:bots/iot.keyple/gpg/secret-subkeys.asc",
     },
-    orgs.newOrgSecret('OSSRH_PASSWORD') {
-      value: "pass:bots/iot.keyple/oss.sonatype.org/gh-token-password",
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_PASSWORD') {
+      value: "pass:bots/iot.keyple/central.sonatype.org/token-password",
     },
-    orgs.newOrgSecret('OSSRH_USERNAME') {
-      value: "pass:bots/iot.keyple/oss.sonatype.org/gh-token-username",
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_USERNAME') {
+      value: "pass:bots/iot.keyple/central.sonatype.org/token-username",
     },
   ],
   _repositories+:: [
@@ -744,9 +744,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       default_branch: "master",
