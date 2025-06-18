@@ -752,7 +752,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newRepo('keyple-website') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      code_scanning_default_languages+: [
+      code_scanning_default_languages: [
         "javascript-typescript",
       ],
       code_scanning_default_setup_enabled: true,
