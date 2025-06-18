@@ -30,6 +30,15 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_USERNAME') {
       value: "pass:bots/iot.keyple/central.sonatype.org/token-username",
     },
+    orgs.newOrgSecret('SSH_PRIVATE_KEY') {
+      value: 'pass:bots/iot.keyple/projects-storage.eclipse.org/id_rsa',
+    },
+    orgs.newOrgSecret('SSH_PASSPHRASE') {
+      value: 'pass:bots/iot.keyple/projects-storage.eclipse.org/id_rsa.passphrase',
+    },
+    orgs.newOrgSecret('SSH_USERNAME') {
+      value: 'pass:bots/iot.keyple/projects-storage.eclipse.org/username',
+    },
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
