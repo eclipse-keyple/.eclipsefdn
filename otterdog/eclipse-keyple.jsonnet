@@ -30,6 +30,18 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_USERNAME') {
       value: "pass:bots/iot.keyple/central.sonatype.org/token-username",
     },
+    orgs.newOrgSecret('SSH_PRIVATE_KEY') {
+      value: 'pass:bots/iot.keyple/projects-storage.eclipse.org/id_rsa',
+    },
+    orgs.newOrgSecret('SSH_PASSPHRASE') {
+      value: 'pass:bots/iot.keyple/projects-storage.eclipse.org/id_rsa.passphrase',
+    },
+    orgs.newOrgSecret('SSH_USERNAME') {
+      value: 'pass:bots/iot.keyple/projects-storage.eclipse.org/username',
+    },
+    orgs.newOrgSecret('SONAR_TOKEN') {
+      value: "pass:bots/iot.keyple/sonarcloud.io/token-keyple",
+    },
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
@@ -817,6 +829,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages: [
+        "actions",
         "python",
       ],
       code_scanning_default_setup_enabled: true,
