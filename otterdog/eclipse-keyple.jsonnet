@@ -39,7 +39,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newOrgSecret('SSH_USERNAME') {
       value: 'pass:bots/iot.keyple/projects-storage.eclipse.org/username',
     },
-    orgs.newRepoSecret('SONAR_TOKEN') {
+    orgs.newOrgSecret('SONAR_TOKEN') {
       value: "pass:bots/iot.keyple/sonarcloud.io/token-keyple",
     },
   ],
