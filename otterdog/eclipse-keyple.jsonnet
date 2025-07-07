@@ -453,6 +453,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-ops') {
+      archived: true,
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
