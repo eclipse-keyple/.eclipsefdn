@@ -461,6 +461,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-ops') {
+      archived: true,
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
@@ -609,6 +610,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
