@@ -80,6 +80,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -106,6 +107,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -140,6 +142,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -240,6 +243,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -263,6 +267,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -285,6 +290,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -307,6 +313,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -329,6 +336,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -471,6 +479,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -491,6 +500,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -514,6 +524,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -540,6 +551,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -598,6 +610,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -632,6 +645,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -666,6 +680,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -702,6 +717,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
@@ -733,6 +749,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin"
       ],
       code_scanning_default_setup_enabled: true,
