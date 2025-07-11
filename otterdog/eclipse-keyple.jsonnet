@@ -598,10 +598,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       aliases: ['keyple-plugin-storage-card-java-api'],
       allow_merge_commit: true,
       allow_update_branch: false,
-      // uncomment when some kotlin code is available in the repo
-      // code_scanning_default_languages+: [
-      //   "java-kotlin"
-      // ],
+      code_scanning_default_languages+: [
+        "actions",
+        "java-kotlin"
+      ],
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
