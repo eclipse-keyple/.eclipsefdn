@@ -68,9 +68,28 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newRepo('keyple-card-calypso-cpp-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "actions",
+        "c-cpp"
+      ],
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "keyple-card-calypso-cpp-lib",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
+    orgs.newRepo('keyple-card-calypso-crypto-legacysam-cpp-lib') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "actions",
+        "c-cpp"
+      ],
+      default_branch: "main",
+      delete_branch_on_merge: false,
+      description: "keyple-card-calypso-crypto-legacysam-cpp-lib",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -130,6 +149,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newRepo('keyple-card-generic-cpp-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "actions",
+        "c-cpp"
+      ],
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "keyple-card-generic-cpp-lib",
@@ -577,6 +600,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
+        "java-kotlin",
       ],
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
@@ -598,6 +622,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newRepo('keyple-plugin-pcsc-cpp-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "actions",
+        "c-cpp"
+      ],
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "keyple-plugin-pcsc-cpp-lib",web_commit_signoff_required: false,
@@ -632,6 +660,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newRepo('keyple-plugin-stub-cpp-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "actions",
+        "c-cpp"
+      ],
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "keyple-plugin-stub-cpp-lib",
@@ -667,6 +699,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newRepo('keyple-service-cpp-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "actions",
+        "c-cpp"
+      ],
       delete_branch_on_merge: false,
       description: "Eclipse Keyple™ Project - C++ implementation: main service API for end users",
       homepage: "",
@@ -705,6 +741,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
+      code_scanning_default_languages+: [
+        "actions",
+        "c-cpp"
+      ],
       delete_branch_on_merge: false,
       description: "keyple-service-resource-cpp-lib",
       web_commit_signoff_required: false,
@@ -736,6 +776,10 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newRepo('keyple-util-cpp-lib') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "actions",
+        "c-cpp"
+      ],
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "keyple-util-cpp-lib",
