@@ -861,8 +861,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
-        "javascript",
-        "typescript",
+        "javascript-typescript",
       ],
       code_scanning_default_setup_enabled: true,
       default_branch: "master",
