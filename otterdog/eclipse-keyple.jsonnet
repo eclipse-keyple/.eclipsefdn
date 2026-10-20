@@ -51,6 +51,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: raw repository to handle issue: global for the project, or specific for a new component  to create",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
@@ -80,6 +82,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: true,
       description: "keyple-card-calypso-cpp-lib",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
+      topics+: [
+        "calypso",
+        "cpp",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -96,6 +106,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "main",
       delete_branch_on_merge: true,
       description: "keyple-card-calypso-crypto-legacysam-cpp-lib",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
+      topics+: [
+        "calypso",
+        "cpp",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -109,6 +127,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: A Bill of Materials (BOM) for Java/Kotlin applications to manage the versions of all Keyple artifacts",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
@@ -131,6 +151,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: SLF4J logging adapter for Java/Kotlin applications",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -152,6 +174,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: Android Log logging adapter for Java/Kotlin applications",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -173,6 +197,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: Android Timber logging adapter for Java/Kotlin applications",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -196,7 +222,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: Calypso legacy SAM extension lib for end users",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "calypso",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -208,7 +241,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: Calypso PKI extension lib for end users",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "calypso",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -226,7 +266,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: Calypso card extension lib for end users",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "calypso",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -250,6 +297,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: true,
       description: "keyple-card-generic-cpp-lib",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
+      topics+: [
+        "generic",
+        "cpp",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -266,9 +321,11 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: add-on library to operate generic smartcard solution (based on the Calypso Terminal Card API) / for end users",
+      has_projects: false,
       has_wiki: false,
-      homepage: "",
+      homepage: "https://keyple.org/",
       topics+: [
+        "generic",
         "java",
         "keyple"
       ],
@@ -284,6 +341,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: true,
       description: "keyple-common-cpp-api",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
+      topics+: [
+        "core",
+        "cpp",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -301,7 +366,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: common API for all modules",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "core",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -343,6 +415,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: use case examples of the Keyple C++ components for end users",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org",
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
@@ -356,6 +430,9 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       default_branch: "master",
       delete_branch_on_merge: true,
       description: "keyple-cpp-meta",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -373,7 +450,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: API for distributed local service developers",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "distributed",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -397,7 +481,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: distributed local service API for end users",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "distributed",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -421,7 +512,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: distributed network API for end users",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "distributed",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -445,7 +543,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: API for distributed remote plugin developers",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "distributed",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -470,7 +575,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: distributed remote plugin API for end users",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "distributed",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -492,6 +604,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: A multiplatform client library implementing the Keyple Server JSON API and Selection JSON Specification to enable non-Keyple applications to interact with a Keyple server.",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
@@ -514,6 +628,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: A multiplatform adapter providing a LocalReader SPI implementation to allow non-Keyple applications to control the local NFC reader",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
@@ -536,6 +652,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: An XCFramework for iOS applications to interface with a remote Keyple-based control server over JSON API",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
@@ -548,7 +666,9 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: java integration tests / internal to the project",
-      homepage: "",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
       topics+: [
         "internal",
         "java",
@@ -595,6 +715,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: use case examples of the Keyple Java components for end users",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org",
       topics+: [
         "java",
@@ -615,6 +737,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: Ops settings",
+      has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
       web_commit_signoff_required: false,
@@ -632,7 +755,9 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: Android NFC plugin library for end users",
-      homepage: "",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
       topics+: [
         "android",
         "keyple",
@@ -655,7 +780,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: Android OMAPI plugin API for end users",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "plugin",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -679,6 +811,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: Card Resource plugin lib for end users",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
@@ -691,7 +825,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project - C++ implementation: API for plugin developers",
-      homepage: "",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
+      topics+: [
+        "core",
+        "cpp",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -709,7 +850,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project - Java implementation: API for plugin developers",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "core",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -723,6 +871,25 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
         },
       ],
     },
+    orgs.newRepo('keyple-plugin-storagecard-cpp-api') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: true,
+      description: "Eclipse Keyple™ Project - Storage Card Plugin API",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
+      topics+: [
+        "core",
+        "cpp",
+        "keyple"
+      ],
+      private_vulnerability_reporting_enabled: true,
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
     orgs.newRepo('keyple-plugin-storagecard-java-api') {
       aliases: ['keyple-plugin-storage-card-java-api'],
       allow_merge_commit: true,
@@ -735,7 +902,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project - Storage Card Plugin API",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "core",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -758,7 +932,15 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
       default_branch: "master",
       delete_branch_on_merge: true,
-      description: "keyple-plugin-pcsc-cpp-lib",
+      description: "Eclipse Keyple™ Project: PC/SC plugin lib for end users",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
+      topics+: [
+        "plugin",
+        "cpp",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -776,7 +958,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Keyple™ Project: PC/SC plugin lib for end users",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "plugin",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -799,7 +988,15 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
       default_branch: "master",
       delete_branch_on_merge: true,
-      description: "keyple-plugin-stub-cpp-lib",
+      description: "Eclipse Keyple™ Project: Stub plugin lib for testers",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
+      topics+: [
+        "plugin",
+        "cpp",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -816,8 +1013,15 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
-      description: "Eclipse Keyple™ Project: stub plugin API for end users",
+      description: "Eclipse Keyple™ Project: Stub plugin lib for testers",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "plugin",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -840,7 +1044,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project - C++ implementation: main service API for end users",
-      homepage: "",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
+      topics+: [
+        "core",
+        "cpp",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -861,6 +1072,11 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "core",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -883,7 +1099,15 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
         "c-cpp"
       ],
       delete_branch_on_merge: true,
-      description: "keyple-service-resource-cpp-lib",
+      description: "Eclipse Keyple™ Project: add-on library to define a profile-based card resource allocation mechanism",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
+      topics+: [
+        "core",
+        "cpp",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -900,7 +1124,9 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: add-on library to define a profile-based card resource allocation mechanism",
-      homepage: "",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
       topics+: [
         "core",
         "java",
@@ -921,7 +1147,15 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
       default_branch: "master",
       delete_branch_on_merge: true,
-      description: "keyple-util-cpp-lib",
+      description: "Eclipse Keyple™ Project: utility library for all users",
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://keyple.org/",
+      topics+: [
+        "core",
+        "cpp",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -938,7 +1172,14 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: utility library for all users",
+      has_projects: false,
+      has_wiki: false,
       homepage: "https://keyple.org/",
+      topics+: [
+        "core",
+        "java",
+        "keyple"
+      ],
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -967,6 +1208,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
+      has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
