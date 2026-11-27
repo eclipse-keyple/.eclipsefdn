@@ -44,9 +44,26 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       value: 'pass:bots/iot.keyple/projects-storage.eclipse.org/username',
     },
   ],
+  rulesets+: [
+    orgs.newOrgRuleset('linear-history') {
+      include_repo_names: [
+        "~ALL"
+      ],
+      exclude_repo_names: [
+        ".eclipsefdn"
+      ],
+      include_refs+: [
+        "~DEFAULT_BRANCH"
+      ],
+      required_pull_request: null,
+      required_status_checks: null,
+      requires_linear_history: true,
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('.github') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: true,
@@ -55,6 +72,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
+      squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -73,7 +91,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-card-calypso-cpp-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -85,6 +104,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "calypso",
         "cpp",
@@ -97,7 +117,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-card-calypso-crypto-legacysam-cpp-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -109,6 +130,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "calypso",
         "cpp",
@@ -122,7 +144,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     },
     orgs.newRepo('keyple-java-bom') {
       local thisRepo = self,
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
@@ -131,6 +154,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
+      squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -213,7 +237,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-card-calypso-crypto-legacysam-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -225,6 +250,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "calypso",
         "java",
@@ -237,13 +263,15 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-card-calypso-crypto-pki-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: Calypso PKI extension lib for end users",
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "calypso",
         "java",
@@ -256,7 +284,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-card-calypso-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -269,6 +298,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "calypso",
         "java",
@@ -288,7 +318,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-card-generic-cpp-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -300,6 +331,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "generic",
         "cpp",
@@ -312,7 +344,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-card-generic-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -324,6 +357,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "generic",
         "java",
@@ -336,7 +370,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-common-cpp-api') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: true,
@@ -344,6 +379,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "core",
         "cpp",
@@ -356,7 +392,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-common-java-api') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -369,6 +406,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "core",
         "java",
@@ -411,7 +449,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     },
     orgs.newRepo('keyple-cpp-conan-recipes') {
       local thisRepo = self,
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
@@ -419,6 +458,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "conan",
         "cpp",
@@ -438,7 +478,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-cpp-example') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: true,
@@ -447,13 +488,15 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_wiki: false,
       homepage: "https://keyple.org",
       private_vulnerability_reporting_enabled: true,
+      squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
     },
     orgs.newRepo('keyple-cpp-meta') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: true,
@@ -462,13 +505,15 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
+      squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
     },
     orgs.newRepo('keyple-distributed-local-java-api') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -481,6 +526,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "distributed",
         "java",
@@ -500,7 +546,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-distributed-local-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -512,6 +559,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "distributed",
         "java",
@@ -531,7 +579,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-distributed-network-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -543,6 +592,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "distributed",
         "java",
@@ -562,7 +612,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-distributed-remote-java-api') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -574,6 +625,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "distributed",
         "java",
@@ -593,7 +645,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-distributed-remote-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -606,6 +659,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "distributed",
         "java",
@@ -627,7 +681,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newRepo('keyple-interop-jsonapi-client-kmp-lib') {
       aliases: ['keyple-less-distributed-client-kmp-lib', 'keypleless-distributed-client-kmp-lib'],
       local thisRepo = self,
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
@@ -636,6 +691,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
+      squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -651,7 +707,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newRepo('keyple-interop-localreader-nfcmobile-kmp-lib') {
       aliases: ['keyple-less-reader-nfcmobile-kmp-lib', 'keypleless-reader-nfcmobile-kmp-lib'],
       local thisRepo = self,
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
@@ -660,6 +717,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
+      squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -675,7 +733,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     orgs.newRepo('keyple-interop-ios-xcframework') {
       aliases: ['keyple-interop-jsonapi-client-nfc-xcframework'],
       local thisRepo = self,
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
@@ -684,19 +743,22 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
+      squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
     },
     orgs.newRepo('keyple-integration-java-test') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: java integration tests / internal to the project",
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "internal",
         "java",
@@ -739,13 +801,15 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-java-example') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project: use case examples of the Keyple Java components for end users",
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "java",
         "keyple",
@@ -774,7 +838,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-plugin-android-nfc-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -786,6 +851,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "android",
         "keyple",
@@ -798,7 +864,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-plugin-android-omapi-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -811,6 +878,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "plugin",
         "java",
@@ -830,7 +898,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-plugin-cardresource-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -843,19 +912,22 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
+      squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
     },
     orgs.newRepo('keyple-plugin-cpp-api') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project - C++ implementation: API for plugin developers",
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "core",
         "cpp",
@@ -868,7 +940,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-plugin-java-api') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -881,6 +954,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "core",
         "java",
@@ -900,13 +974,15 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-plugin-storagecard-cpp-api') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "Eclipse Keyple™ Project - Storage Card Plugin API",
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "core",
         "cpp",
@@ -920,7 +996,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     },
     orgs.newRepo('keyple-plugin-storagecard-java-api') {
       aliases: ['keyple-plugin-storage-card-java-api'],
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -933,6 +1010,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "core",
         "java",
@@ -952,7 +1030,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-plugin-pcsc-cpp-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -964,6 +1043,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "plugin",
         "cpp",
@@ -976,7 +1056,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-plugin-pcsc-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -989,6 +1070,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "plugin",
         "java",
@@ -1008,7 +1090,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-plugin-stub-cpp-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -1020,6 +1103,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "plugin",
         "cpp",
@@ -1032,7 +1116,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-plugin-stub-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -1045,6 +1130,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "plugin",
         "java",
@@ -1064,7 +1150,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-service-cpp-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -1075,6 +1162,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "core",
         "cpp",
@@ -1087,7 +1175,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-service-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -1100,6 +1189,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "core",
         "java",
@@ -1119,7 +1209,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-service-resource-cpp-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       default_branch: "master",
       code_scanning_default_languages+: [
@@ -1131,6 +1222,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "core",
         "cpp",
@@ -1143,7 +1235,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-service-resource-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -1155,6 +1248,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "core",
         "java",
@@ -1167,7 +1261,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-util-cpp-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -1179,6 +1274,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "core",
         "cpp",
@@ -1191,7 +1287,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       },
     },
     orgs.newRepo('keyple-util-java-lib') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -1203,6 +1300,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "core",
         "java",
@@ -1222,7 +1320,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       ],
     },
     orgs.newRepo('keyple-website') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
@@ -1240,6 +1339,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_wiki: false,
       homepage: "https://keyple.org/",
       private_vulnerability_reporting_enabled: true,
+      squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1257,7 +1357,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     },
     orgs.newRepo('keyple-api-docs') {
       local thisRepo = self,
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_setup_enabled: false,
       delete_branch_on_merge: true,
@@ -1269,6 +1370,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "documentation",
         "javadoc",
@@ -1298,7 +1400,8 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
     },
     orgs.newRepo('keyple-actions') {
       local thisRepo = self,
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages: [
         "actions",
@@ -1312,6 +1415,7 @@ orgs.newOrg('iot.keyple', 'eclipse-keyple') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://keyple.org/",
+      squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "github-actions",
         "ci-cd",
